@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblMeterId"
+            android:text="Meter Id :"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMeterId"
+            android:text="53222"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/lblMeterId"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCommandId"
+            android:text="Command Id :"
+            android:layout_below="@+id/lblMeterId"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCommandId"
+            android:text="12"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblMeterId"
+            android:layout_toRightOf="@+id/lblCommandId"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblVolume"
+            android:text="Volume :"
+            android:layout_below="@+id/lblCommandId"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtKLiters"
+            android:text="10 kls"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblCommandId"
+            android:layout_toRightOf="@+id/lblVolume"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLiters"
+            android:text="5 ls"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblCommandId"
+            android:layout_toRightOf="@+id/txtKLiters"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblIData"
+            android:text="I :"
+            android:layout_below="@+id/lblVolume"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iData"
+            android:text="0"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblVolume"
+            android:layout_toRightOf="@+id/lblIData"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblFData"
+            android:text="F :"
+            android:layout_below="@+id/lblIData"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fData"
+            android:text="1"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblIData"
+            android:layout_toRightOf="@+id/lblFData"/>
+
+        <TextView
+            android:id="@+id/lblAlarms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblFData"
+            android:padding="@dimen/_5sdp"
+            android:text="Alarms :"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblAlarmName1"
+            android:text="Tamper/Bat_Low :"
+            android:layout_below="@+id/lblAlarms"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAlarm1"
+            android:text="1"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblAlarms"
+            android:layout_toRightOf="@+id/lblAlarmName1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblAlarmName2"
+            android:text="Flow_BelowTHR/AboveTHR :"
+            android:layout_below="@+id/lblAlarmName1"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAlarm2"
+            android:text="1"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblAlarmName1"
+            android:layout_toRightOf="@+id/lblAlarmName2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblAlarmName3"
+            android:text="Pipe Empty/Leakage :"
+            android:layout_below="@+id/lblAlarmName2"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAlarm3"
+            android:text="1"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblAlarmName2"
+            android:layout_toRightOf="@+id/lblAlarmName3"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblAlarmName4"
+        android:text="NoConsumption/ReverseFlow:"
+        android:layout_below="@+id/lblAlarmName3"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"
+        android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAlarm4"
+            android:text="1"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblAlarmName3"
+            android:layout_toRightOf="@+id/lblAlarmName4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblAlarmName5"
+            android:text="Reserved_1/Reserved_2 :"
+            android:layout_below="@+id/lblAlarmName4"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAlarm5"
+            android:text="1"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblAlarmName4"
+            android:layout_toRightOf="@+id/lblAlarmName5"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

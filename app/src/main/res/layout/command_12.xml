@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblMeterId"
+            android:text="Meter Id :"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMeterId"
+            android:text="53222"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/lblMeterId"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCommandId"
+            android:text="Command Id :"
+            android:layout_below="@+id/lblMeterId"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCommandId"
+            android:text="12"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblMeterId"
+            android:layout_toRightOf="@+id/lblCommandId"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblWd"
+            android:text="Watchdog Counter :"
+            android:layout_below="@+id/lblCommandId"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWd"
+            android:text="10"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_below="@+id/lblCommandId"
+            android:layout_toRightOf="@+id/lblWd"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

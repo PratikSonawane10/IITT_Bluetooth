@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BluetoothData</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="none_paired">No devices have been paired</string>
+
+    <string name="commandPrompt">Choose a country</string>
+
+    <string-array name="commandArray">
+        <item>Select Command :</item>
+        <item>Flow Data Total</item>
+        <item>Alarm1</item>
+        <item>Alarm2</item>
+        <item>Alarm3</item>
+        <item>Alarm4</item>
+        <item>Alarm5</item>
+        <item>Min1</item>
+        <item>Min2</item>
+        <item>Min3</item>
+        <item>Min4</item>
+        <item>Min5</item>
+        <item>Max1</item>
+        <item>Max2</item>
+        <item>Max3</item>
+        <item>Max4</item>
+        <item>Max5</item>
+        <item>Flow For DD/MM</item>
+        <item>Read Meter Time</item>
+        <item>Read Meter Watchdog Counter</item>
+        <item>Format Meter</item>
+    </string-array>
+
+</resources>

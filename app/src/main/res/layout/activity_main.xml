@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMeterId"
+        android:hint="Enter Meter Id"
+        android:inputType="number"
+        android:layout_margin="@dimen/_5sdp"/>
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/txtMeterId"-->
+        <!--android:id="@+id/txtCommandNo"-->
+        <!--android:hint="Command No"-->
+        <!--android:layout_margin="@dimen/_5sdp"/>-->
+    <Spinner
+        android:id="@+id/txtCommandType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:entries="@array/commandArray"
+        android:layout_below="@+id/txtMeterId"
+        android:prompt="@string/commandPrompt" />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/txtCommandType"-->
+        <!--android:id="@+id/txtOutput"-->
+        <!--android:hint="Hex Output"-->
+        <!--android:textSize="@dimen/_15sdp"-->
+        <!--android:layout_margin="@dimen/_5sdp"/>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCommandType"
+        android:layout_margin="5dp"
+        android:id="@+id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:text="Submit"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtDataReceived"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Received Data"-->
+        <!--android:textSize="15sp"-->
+        <!--android:layout_margin="@dimen/_2sdp"-->
+        <!--android:layout_below="@+id/btnSubmit"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/lblCommandNo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Command No"-->
+        <!--android:layout_below="@+id/txtDataReceived"-->
+        <!--android:layout_margin="@dimen/_2sdp"-->
+        <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/lblmeterId"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="MeterId"-->
+        <!--android:layout_below="@+id/lblCommandNo"-->
+        <!--android:layout_margin="@dimen/_2sdp"-->
+        <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/lblWDCounter"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="WatchDog Counter"-->
+        <!--android:layout_below="@+id/lblmeterId"-->
+        <!--android:layout_margin="@dimen/_2sdp"-->
+        <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/lblMeterTime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="WatchDog Counter"-->
+        <!--android:layout_below="@+id/lblWDCounter"-->
+        <!--android:layout_margin="@dimen/_2sdp"-->
+        <!--android:textSize="15sp" />-->
+
+
+
+
+
+</RelativeLayout>
